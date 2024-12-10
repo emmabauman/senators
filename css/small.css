@@ -1,0 +1,91 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS */
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+}
+body {
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    background-color: #333; 
+    padding: 10px;
+    text-align: center;
+}
+
+nav button {
+    background: none; 
+    color: white; 
+    border: none; 
+    font-size: 16px; 
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+nav button:hover {
+    background-color: #555; 
+}
+  
+/* Apply a natural box layout model to all elements */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#senatorHere {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+}
+
+#senatorHere figure {
+    margin: 10px 2%;
+    padding: 0;
+    width: 150px;
+    text-align: center; /* Ensures the content is centered inside the figure */
+}
+
+#senatorHere figure.Democrat {
+    border: solid 4px blue;
+}
+
+#senatorHere figure.Republican {
+    border: solid 4px red;
+}
+
+#senatorHere img {
+    size: 50px;
+    padding: 10px;
+    width: 80%;
+    height: auto; /* Maintains aspect ratio */
+}
+
+#senatorHere figcaption {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive layout: Adjust the number of senators per row */
+@media (max-width: 600px) {
+    #senatorHere figure {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    #senatorHere figure {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1025px) {
+    #senatorHere figure {
+        width: 30%;
+    }
+}

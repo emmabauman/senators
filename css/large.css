@@ -1,0 +1,7 @@
+/* Media Query for large screens */
+@media only screen and (min-width: 64rem) {
+    #senatorHere figure {
+        margin: 10px 2%;  
+        flex-basis: 28%;  
+    }
+} /* end large screen media query */

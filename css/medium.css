@@ -1,0 +1,7 @@
+@media only screen and (min-width: 35rem) {
+card {
+   
+    flex-basis: 44%;
+}
+    
+} /* end media query*/
